@@ -13,6 +13,8 @@ body {
 :root {
     /* background-color */
     --bg-primary-color: #0c0c0c;
+    --bg-fill-color: #ececec;
+    --bg-food-color:red;
     /* text color */
     --text-primary-color: #f0f0f0;
     /* spacing variable*/
@@ -77,15 +79,20 @@ section .infos {
     flex-grow: 1;
     border-radius: var(--space-xs);
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30px,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(50px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(50px,1fr));
 
 
 }
 
 .block{
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
     border: 1px solid var(--border-primary-color);
-
+}
+.fill{
+background-color: var(--bg-fill-color);
+}
+.food{
+    background-color: var(--bg-food-color);
 }
